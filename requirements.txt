@@ -1,0 +1,35 @@
+# --- Étape 1 : traduction EN -> FR (MarianMT) ---
+transformers>=4.46
+sentencepiece
+sacremoses
+
+# --- Étape 2 : fine-tuning QLoRA ---
+torch>=2.5
+bitsandbytes>=0.45
+peft>=0.14
+accelerate>=1.2
+datasets>=3.2
+scikit-learn
+loralib
+einops
+xformers
+tensorboard
+
+# --- Évaluation ---
+evaluate
+rouge-score
+nltk
+
+# --- Étape 3 : déploiement RAG + interface ---
+streamlit>=1.41
+langchain-community
+faiss-cpu
+pypdf
+sentence-transformers
+
+# --- Utilitaires ---
+pandas
+numpy
+matplotlib
+seaborn
+kaggle
